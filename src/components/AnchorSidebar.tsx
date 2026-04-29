@@ -75,7 +75,7 @@ const AnchorSidebar = () => {
       <div className="absolute right-0 top-[30%] h-auto flex flex-col items-end">
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className={`pointer-events-auto flex items-center justify-center transition-all duration-300 shadow-lg border border-gray-200 border-r-0 bg-white/90 backdrop-blur-md text-gray-500 hover:text-blue-600 ${
+          className={`pointer-events-auto flex items-center justify-center transition-all duration-300 shadow-lg border border-gray-200 border-r-0 bg-gray-100/90 backdrop-blur-md text-gray-600 hover:text-gray-900 ${
             isOpen ? 'rounded-full mr-[260px] p-2' : 'rounded-l-xl p-2.5 pr-1.5'
           }`}
           style={{ transitionProperty: 'margin, border-radius, padding' }}
@@ -89,11 +89,11 @@ const AnchorSidebar = () => {
         initial={false}
         animate={{ x: isOpen ? 0 : '100%' }}
         transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-        className="absolute right-0 top-0 w-72 h-full bg-white border-l border-gray-200 shadow-2xl flex flex-col pointer-events-auto"
+        className="absolute right-0 top-0 w-72 h-full bg-gray-50 border-l border-gray-200 shadow-2xl flex flex-col pointer-events-auto"
       >
-        <div className="p-4 border-b border-gray-100 flex items-center justify-between bg-white sticky top-0 z-10">
+        <div className="p-4 border-b border-gray-200 flex items-center justify-between bg-gray-50 sticky top-0 z-10">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-white">
+            <div className="w-8 h-8 rounded-lg bg-gray-700 flex items-center justify-center text-white">
               <Bookmark size={18} />
             </div>
             <span className="font-semibold text-gray-900">Page Anchors</span>
@@ -101,7 +101,7 @@ const AnchorSidebar = () => {
           <motion.button
              whileTap={{ scale: 0.95 }}
              onClick={() => setIsAdding(true)}
-             className="p-1.5 rounded-full bg-blue-50 text-blue-600 hover:bg-blue-100 transition-colors"
+             className="p-1.5 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors"
              title="Add anchor here"
           >
             <Plus size={20} />
@@ -130,7 +130,7 @@ const AnchorSidebar = () => {
                     onChange={(e) => setInputText(e.target.value)}
                     onKeyDown={(e) => e.key === 'Enter' && addAnchor()}
                     placeholder="Enter text..."
-                    className="w-full px-3 py-2 bg-white border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500"
+                    className="w-full px-3 py-2 bg-white border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-gray-500/20 focus:border-gray-500"
                   />
                 </div>
                 <div className="flex justify-end gap-2">
@@ -142,7 +142,7 @@ const AnchorSidebar = () => {
                   </button>
                   <button
                     onClick={addAnchor}
-                    className="px-4 py-1.5 bg-blue-600 text-white rounded-lg text-xs font-medium hover:bg-blue-700 transition-colors"
+                    className="px-4 py-1.5 bg-gray-700 text-white rounded-lg text-xs font-medium hover:bg-gray-800 transition-colors"
                   >
                    Save Anchor
                   </button>
@@ -169,10 +169,10 @@ const AnchorSidebar = () => {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, scale: 0.95 }}
                 onClick={() => scrollToAnchor(anchor.position)}
-                className="group relative flex items-center gap-3 p-3 bg-white border border-gray-100 rounded-xl hover:border-blue-200 hover:shadow-sm cursor-pointer transition-all active:scale-[0.98]"
+                className="group relative flex items-center gap-3 p-3 bg-white border border-gray-200 rounded-xl hover:border-gray-300 hover:shadow-sm cursor-pointer transition-all active:scale-[0.98]"
               >
-                <div className="w-2 h-8 rounded-full bg-blue-50 group-hover:bg-blue-100 transition-colors flex flex-col items-center justify-center overflow-hidden">
-                   <div className="w-1.5 h-1.5 rounded-full bg-blue-400" />
+                <div className="w-2 h-8 rounded-full bg-gray-200 group-hover:bg-gray-300 transition-colors flex flex-col items-center justify-center overflow-hidden">
+                   <div className="w-1.5 h-1.5 rounded-full bg-gray-500" />
                 </div>
                 
                 <div className="flex-1 min-w-0">
@@ -205,7 +205,7 @@ const AnchorSidebar = () => {
           </AnimatePresence>
         </div>
 
-        <div className="p-4 bg-gray-50/50 border-t border-gray-100">
+        <div className="p-4 bg-gray-100/50 border-t border-gray-200">
            <p className="text-[10px] text-center text-gray-400 uppercase tracking-widest font-bold">
              Chrome Extension Prototype
            </p>

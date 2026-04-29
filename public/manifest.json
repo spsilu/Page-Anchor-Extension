@@ -7,7 +7,8 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["loader.js"]
+      "js": ["loader.js"],
+      "run_at": "document_start"
     }
   ],
   "web_accessible_resources": [
