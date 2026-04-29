@@ -46,13 +46,33 @@ Use the extension directly inside your browser while reading online content.
 This project is a Chrome extension. To install it locally:
 
 1. Download or clone this repository.
+
 ```bash
-git clone https://github.com/spsilu/Page-Anchor-Extension
+git clone https://github.com/spsilu/Page-Anchor-Extension.git
+```
 
 2. Open Chrome and go to:
-```bashchrome://extensions/
 
-3.Enable Developer mode in the top-right corner.
-4.Click Load unpacked.
-5.Select the project folder.
-6.The extension will be installed in Chrome and ready to use.
+```text
+chrome://extensions/
+```
+
+3. Enable **Developer mode** in the top-right corner.
+
+4. Click **Load unpacked**.
+
+5. Select the project folder.
+
+6. The extension will be installed in Chrome and ready to use.
+
+## How to Use
+
+1. Open a long article or web page in Chrome.
+
+2. Activate the extension from the Chrome toolbar.
+
+3. Mark important content while reading.
+
+4. Use the extension panel or navigation controls to jump back to marked positions.
+
+5. Continue reading from the selected position without manually scrolling through the page.
