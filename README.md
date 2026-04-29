@@ -1,20 +1,50 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+  <img width="1200" alt="App Screenshot" src="./screenshot.png" />
 </div>
 
-# Run and deploy your AI Studio app
+# Long Article Reading Assistant
 
-This contains everything you need to run your app locally.
+A lightweight tool designed for reading long articles more efficiently. It helps users mark important content, keep track of key sections, and quickly jump to specific positions in the article.
 
-View your app in AI Studio: https://ai.studio/apps/2129fd9f-c48e-4153-82c0-6d42ae139333
+## Overview
 
-## Run Locally
+Long Article Reading Assistant is built for users who frequently read lengthy documents, reports, blogs, research articles, or online essays. Instead of scrolling endlessly and losing context, users can highlight important parts and navigate directly to the sections they care about.
 
-**Prerequisites:**  Node.js
+## Key Features
 
+### Mark Important Content
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Easily mark important paragraphs, sentences, or sections while reading. This helps users remember key ideas and quickly review meaningful content later.
+
+### Quick Navigation
+
+Jump to a specific position in a long article without manually scrolling. This is especially useful when working with long-form content, research materials, or detailed reports.
+
+### Better Reading Flow
+
+The tool improves the reading experience by helping users stay focused, organize information, and move through long content more efficiently.
+
+## Use Cases
+
+- Reading long articles or blog posts
+- Reviewing research papers or reports
+- Studying technical documentation
+- Marking important content for later review
+- Quickly navigating to specific sections in lengthy text
+
+## Why This Tool
+
+Long articles often contain valuable information, but it can be difficult to keep track of important sections. This tool makes long-form reading easier by combining content marking and fast navigation in one simple experience.
+
+## Screenshot
+
+<div align="center">
+  <img width="1200" alt="Long Article Reading Assistant Screenshot" src="./screenshot.png" />
+</div>
+
+## Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/spsilu/Page-Anchor-Extension
