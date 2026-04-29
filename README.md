@@ -46,11 +46,12 @@ Use the extension directly inside your browser while reading online content.
 This project is a Chrome extension. To install it locally:
 
 1. Download or clone this repository.
-
 ```bash
 git clone https://github.com/spsilu/Page-Anchor-Extension
+
 2. Open Chrome and go to:
-chrome://extensions/
+```bashchrome://extensions/
+
 3.Enable Developer mode in the top-right corner.
 4.Click Load unpacked.
 5.Select the project folder.
