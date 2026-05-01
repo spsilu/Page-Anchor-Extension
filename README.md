@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="1200" alt="Long Article Reading Assistant Screenshot" src="./screenshot.png" />
+  <img width="1200" alt="Long Article Reading Assistant Screenshot" src="./ReadAnchor.png" />
 </div>
 
 # Long Article Reading Assistant
